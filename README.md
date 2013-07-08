@@ -23,5 +23,4 @@ The ultimate goal is to construct a physical version of our modular clock:
 
 http://poibella.org
 
-http://github.com/sfmiller940/viz
-
+http://github.com/sfmiller940/modularclock
