@@ -1,3 +1,9 @@
 Arduino Counters by Stephen F. Miller
+=====================
 
-binarycounter.c -
+binarycounter.c 
+---------------
+
+
+rainbowcounter.c
+----------------
