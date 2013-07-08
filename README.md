@@ -18,8 +18,9 @@ enough pins to use 3 rows of the LED matrix.
 Future Plans
 ---------------
 
+I hope to incorporate a real time clock for accurate timing, and shift registers so I can use more than 3 rows of RGB LEDS.
 The ultimate goal is to construct a physical version of our modular clock:
+
 http://poibella.org
 http://github.com/sfmiller940/viz
 
-Towards this goal I hope to incorporate a real time clock for accurate timing, and shift registers so I can use more than 3 rows of RGB LEDS.
