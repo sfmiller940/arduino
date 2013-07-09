@@ -21,6 +21,6 @@ Future Plans
 I hope to incorporate a real time clock for accurate timing, and shift registers so I can use more than 3 rows of RGB LEDS.
 The ultimate goal is to construct a physical version of our modular clock:
 
-http://poibella.org
+http://poibella.org/modularclock
 
 http://github.com/sfmiller940/modularclock
