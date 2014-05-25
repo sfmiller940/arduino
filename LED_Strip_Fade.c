@@ -1,4 +1,4 @@
-// This code was originally hacked from https://learn.adafruit.com/rgb-led-strips/example-code
+// This code is from https://learn.adafruit.com/rgb-led-strips/example-code
  
 // Define RGB pins
 #define REDPIN 6
