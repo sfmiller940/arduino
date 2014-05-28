@@ -1,11 +1,11 @@
-// This code is from https://learn.adafruit.com/rgb-led-strips/example-code
- 
+// Color fader for RGB LED Strip.
+
 // Define RGB pins
 #define REDPIN 6
 #define GREENPIN 5
 #define BLUEPIN 3
  
-#define FADESPEED 5     // make this higher to slow down
+#define FADESPEED 40     // make this higher to slow down
  
 void setup() {
   pinMode(REDPIN, OUTPUT);
@@ -15,36 +15,24 @@ void setup() {
  
  
 void loop() {
-  int r, g, b;
+  int i;
  
-  // fade from blue to violet
-  for (r = 0; r < 256; r++) { 
-    analogWrite(REDPIN, r);
+  // fade from green to red
+  for (i = 0; i < 256; i++) { 
+    analogWrite(GREENPIN, (255 - i) );
+    analogWrite(REDPIN, i);
     delay(FADESPEED);
   } 
-  // fade from violet to red
-  for (b = 255; b > 0; b--) { 
-    analogWrite(BLUEPIN, b);
+  // fade from red to blue
+  for (i = 0; i < 256 ; i++) { 
+    analogWrite(REDPIN, (255 - i) );
+    analogWrite(BLUEPIN, i);
     delay(FADESPEED);
   } 
-  // fade from red to yellow
-  for (g = 0; g < 256; g++) { 
-    analogWrite(GREENPIN, g);
-    delay(FADESPEED);
-  } 
-  // fade from yellow to green
-  for (r = 255; r > 0; r--) { 
-    analogWrite(REDPIN, r);
-    delay(FADESPEED);
-  } 
-  // fade from green to teal
-  for (b = 0; b < 256; b++) { 
-    analogWrite(BLUEPIN, b);
-    delay(FADESPEED);
-  } 
-  // fade from teal to blue
-  for (g = 255; g > 0; g--) { 
-    analogWrite(GREENPIN, g);
+  // fade from blue to green
+  for (i = 0; i < 256; i++) { 
+    analogWrite(BLUEPIN, ( 255 - i) );
+    analogWrite(GREENPIN, i);
     delay(FADESPEED);
   } 
 }
