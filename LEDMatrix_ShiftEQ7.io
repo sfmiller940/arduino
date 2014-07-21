@@ -72,13 +72,11 @@ void loop()
     //Start flashing
     for (int flash=0; flash<7; flash++){
       for (int i = 0; i <= (spectrumValue[j] / 128); i++){
-        //if(i <= (spectrumValue[j] / 128) ){
-           if (i > flash ) { bitClear(leds[2],i); }
-           else{
-            bitClear(leds[1],i); 
-            bitClear(leds[0],i); 
-           }
-        //}
+         if (i > flash ) { bitClear(leds[2],i); }
+         else{
+          bitClear(leds[1],i); 
+          bitClear(leds[0],i); 
+         }
       }
       //Flash and reset to blank.
       flash_row();
