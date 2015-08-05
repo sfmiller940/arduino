@@ -54,11 +54,11 @@ void loop()
   digitalWrite(resetPin, LOW);
   
   // Loop over columns/frequencies
-  for(int j=0; j<7;j++){
+  for(int j=6; j>=0;j--){
 
     //Set BG brightness.
-    analogWrite(brightpin[1], 255 - (42 * j) );
-    analogWrite(brightpin[0], 3 + (42 * j) );
+    analogWrite(brightpin[0], 255 - (42 * j) );
+    analogWrite(brightpin[1], 3 + (42 * j) );
 
     //Read EQ7
     digitalWrite(strobePin, LOW);
